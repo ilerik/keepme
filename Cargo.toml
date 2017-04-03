@@ -1,0 +1,35 @@
+[package]
+name = "keepme"
+version = "0.1.0"
+authors = ["ilerik <erik.lite@gmail.com>"]
+
+[dependencies]
+crc = "*"
+futures = "*"
+jwt = "*"
+hyper="*"
+hyper-openssl = "*"
+hyper-native-tls = "*"
+libc = "*"
+num_cpus = "*"
+net2 = "*"
+curl = "*"
+tokio-core = "*"
+pretty_env_logger = "*"
+rust-crypto="*"
+rustc-serialize="*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"  # just for the JSON serialization, not required in general
+time = "*"
+unicase = "*"
+bitcoin = "*"
+url="*"
+ethkey = { path = "parity/ethkey" }
+
+[dev-dependencies]
+#tempdir = "0.3.5"
+
+[[bin]]
+name = "keepme"
+path = "src/main.rs"
